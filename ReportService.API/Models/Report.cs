@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace iPAS.ReportService.API.Models
+namespace ReportService.API.Models
 {
     public class Report
     {

@@ -7,16 +7,16 @@ EXPOSE 443
 
 FROM mcr.microsoft.com/dotnet/core/sdk:3.1-buster AS build
 WORKDIR /src
-COPY ["iPAS.ReportService.API/iPAS.ReportService.API.csproj", "iPAS.ReportService.API/"]
-RUN dotnet restore "iPAS.ReportService.API/iPAS.ReportService.API.csproj"
+COPY ["ReportService.API/ReportService.API.csproj", "ReportService.API/"]
+RUN dotnet restore "ReportService.API/ReportService.API.csproj"
 COPY . .
-WORKDIR "/src/iPAS.ReportService.API"
-RUN dotnet build "iPAS.ReportService.API.csproj" -c Release -o /app/build
+WORKDIR "/src/ReportService.API"
+RUN dotnet build "ReportService.API.csproj" -c Release -o /app/build
 
 FROM build AS publish
-RUN dotnet publish "iPAS.ReportService.API.csproj" -c Release -o /app/publish
+RUN dotnet publish "ReportService.API.csproj" -c Release -o /app/publish
 
 FROM base AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
-ENTRYPOINT ["dotnet", "iPAS.ReportService.API.dll"]
+ENTRYPOINT ["dotnet", "ReportService.API.dll"]

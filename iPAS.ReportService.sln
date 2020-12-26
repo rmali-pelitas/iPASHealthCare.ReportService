@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30204.135
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "iPAS.ReportService.API", "iPAS.ReportService.API\iPAS.ReportService.API.csproj", "{AEE4F841-3A79-47A7-8319-B0EEFDBB3839}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReportService.API", "ReportService.API\ReportService.API.csproj", "{AEE4F841-3A79-47A7-8319-B0EEFDBB3839}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

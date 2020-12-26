@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Net.Http;
 using System.Threading.Tasks;
-using iPAS.ReportService.API.Models;
+using ReportService.API.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
@@ -14,7 +14,7 @@ using Microsoft.Rest;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 
-namespace iPAS.ReportService.API.Controllers
+namespace ReportService.API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
